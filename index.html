@@ -1,17 +1,61 @@
-# My Website
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>My Name</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">My Projects</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
 
-Welcome to my simple website!
+    <main>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>Insert your brief bio here.</p>
+      </section>
 
-## About Me
+      <section id="projects">
+        <h2>My Projects</h2>
+        <ul>
+          <li>
+            <h3>Project 1 Name</h3>
+            <p>Insert a brief description here.</p>
+          </li>
+          <li>
+            <h3>Project 2 Name</h3>
+            <p>Insert a brief description here.</p>
+          </li>
+        </ul>
+      </section>
 
-I am a software developer who loves coding and learning new things.
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
 
-## My Projects
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
 
-### Project 1
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
 
-Description of project 1
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
 
-### Project 2
-
-Description of project 2
+    <footer>
+      <p>&copy; Year - My Portfolio</p>
+    </footer>
+  </body>
+</html>
